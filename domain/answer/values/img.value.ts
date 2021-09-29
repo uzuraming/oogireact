@@ -1,4 +1,4 @@
-export class OdaiImg {
+export class AnswerImg {
     private img    
     public get value() {
         return this.img
@@ -7,7 +7,7 @@ export class OdaiImg {
     static create(img:string){
         const isVaild = img.length <= 1000 && img.length > 0
         if(isVaild){
-            return new OdaiImg(img)
+            return new AnswerImg(img)
         } else {
             throw new Error("imgの長さが不適切です");
         }

@@ -1,4 +1,4 @@
-export class OdaiSentense {
+export class AnswerSentense {
     private sentense    
     public get value() {
         return this.sentense
@@ -7,7 +7,7 @@ export class OdaiSentense {
     static create(sentense:string){
         const isVaild = sentense.length <= 200 && sentense.length > 0
         if(isVaild){
-            return new OdaiSentense(sentense)
+            return new AnswerSentense(sentense)
         } else {
             throw new Error("sentenseの長さが不適切です");
         }

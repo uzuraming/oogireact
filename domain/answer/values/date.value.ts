@@ -1,11 +1,11 @@
-export class OdaiDate {
+export class AnswerDate {
     private date_release    
     public get value() {
         return this.date_release
     }
 
     static create(date_release:Date){
-        return new OdaiDate(date_release)
+        return new AnswerDate(date_release)
     }
     
     public isEqual(otherdate_release:Date){
